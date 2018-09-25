@@ -1,2 +1,2 @@
 # TimeLapse
-Simple Int extension with time lapse description
+Simple Int extension with time lapse description (spanish version)
