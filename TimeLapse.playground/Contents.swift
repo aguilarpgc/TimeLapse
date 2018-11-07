@@ -54,6 +54,7 @@ class TimeLapseTests: XCTestCase {
         XCTAssertEqual(31_535_999.timeLapseFormat(), "12 meses")
     }
     
+    // Years
     func testYears() {
         XCTAssertEqual(31_536_000.timeLapseFormat(), "1 año")
         XCTAssertEqual(63_072_000.timeLapseFormat(), "2 años")
