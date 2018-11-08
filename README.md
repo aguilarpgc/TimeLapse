@@ -24,7 +24,7 @@ Converts `Int` (seconds) to a formatted short length `String`
 
 ### Custom
 
-Conforts to the protocol `TimeLapseFormat` and assign it to `Int.timeLapseFormat`
+Conforts to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
 
 #### Example
 
@@ -41,11 +41,11 @@ struct CustomTimeLapseFormat: TimeLapseFormat {
     var year: String = "y"
 }
 ```
-Then:
+##### Then:
 
 `TimeLapse.format = CustomTimeLapseFormat()`
 
-Result: 
+##### Result: 
 
 * `0.shortTimeLapse()` now
 * `10.shortTimeLapse()` 10sec
@@ -56,7 +56,7 @@ Result:
 * `31_535_999.shortTimeLapse()` 12mon
 * `630_720_000.shortTimeLapse()` 20y
 
-Change back to default format
+##### Change back to default format
 
 `TimeLapse.setDefaultTimeLapseFormat()`
 
