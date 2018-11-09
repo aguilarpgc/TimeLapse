@@ -28,7 +28,7 @@ Conforts to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
 
 #### Example
 
-```
+``` Swift
 struct CustomTimeLapseFormat: TimeLapseFormat {
 
     var now: String = "now"
@@ -43,7 +43,9 @@ struct CustomTimeLapseFormat: TimeLapseFormat {
 ```
 ##### Then:
 
-`TimeLapse.format = CustomTimeLapseFormat()`
+``` Swift
+TimeLapse.format = CustomTimeLapseFormat()
+```
 
 ##### Result: 
 
@@ -58,6 +60,8 @@ struct CustomTimeLapseFormat: TimeLapseFormat {
 
 ##### Change back to default format
 
-`TimeLapse.setDefaultTimeLapseFormat()`
+``` Swift
+TimeLapse.setDefaultTimeLapseFormat()
+```
 
 
