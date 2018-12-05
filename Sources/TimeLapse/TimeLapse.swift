@@ -5,7 +5,6 @@
 //  Created by Paul Aguilar on 9/25/18.
 //
 
-
 public struct TimeLapse {
     
     public static var format: TimeLapseFormat = TimeLapseFormatDefault()
