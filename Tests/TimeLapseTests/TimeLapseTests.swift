@@ -2,14 +2,7 @@ import XCTest
 @testable import TimeLapse
 
 final class TimeLapseTests: XCTestCase {
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-//        XCTAssertEqual(TimeLapse().text, "Hello, World!")
-    }
-    
+
     func testJustNow() {
         XCTAssertEqual(0.shortTimeLapse(), "just now")
         XCTAssertEqual(2.shortTimeLapse(), "just now")
@@ -73,14 +66,14 @@ final class TimeLapseTests: XCTestCase {
         
         struct CustomTimeLapseFormat: TimeLapseFormat {
             
-            var now: String = "now"
-            var second: String = "sec"
-            var minute: String = "min"
-            var hour: String = "hour"
-            var day: String = "d"
-            var week: String = "w"
-            var month: String = "mon"
-            var year: String = "y"
+            var now    : String = "now"
+            var second : String = "sec"
+            var minute : String = "min"
+            var hour   : String = "hour"
+            var day    : String = "d"
+            var week   : String = "w"
+            var month  : String = "mon"
+            var year   : String = "y"
         }
         
         TimeLapse.format = CustomTimeLapseFormat()
@@ -96,8 +89,16 @@ final class TimeLapseTests: XCTestCase {
         
         TimeLapse.setDefaultTimeLapseFormat()
     }
-
+    
     static var allTests = [
-        ("testExample", testExample),
-    ]
+        ("testJustNow", testJustNow),
+        ("testSeconds", testSeconds),
+        ("testMinutes", testMinutes),
+        ("testHours", testHours),
+        ("testDays", testDays),
+        ("testWeeks", testWeeks),
+        ("testMonths", testMonths),
+        ("testYears", testYears),
+        ("testCustom", testCustom)]
 }
+
