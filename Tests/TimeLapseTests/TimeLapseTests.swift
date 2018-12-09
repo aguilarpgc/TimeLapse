@@ -87,7 +87,7 @@ final class TimeLapseTests: XCTestCase {
         XCTAssertEqual(31_535_999.shortTimeLapse(), "12mon")
         XCTAssertEqual(630_720_000.shortTimeLapse(), "20y")
         
-        TimeLapse.setDefaultTimeLapseFormat()
+        TimeLapse.enableDefaultFormat()
     }
     
     static var allTests = [
