@@ -1,5 +1,8 @@
 # TimeLapse
 
+[![Swift](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![License](https://img.shields.io/badge/license-MIT-71787A.svg)](https://tldrlegal.com/license/mit-license)
+
 Simple `Int` extension with time lapse description
 
 Converts `Int` (seconds) to a formatted short length `String`
