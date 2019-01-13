@@ -18,7 +18,7 @@ public protocol TimeLapseFormat {
     
 }
 
-public struct TimeLapseFormatDefault: TimeLapseFormat {
+public struct TimeLapseDefaultFormat: TimeLapseFormat {
     
     public let now    = "just now"
     public let second = "s"

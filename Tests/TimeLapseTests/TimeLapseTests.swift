@@ -4,6 +4,7 @@ import XCTest
 final class TimeLapseTests: XCTestCase {
 
     func testJustNow() {
+        XCTAssertEqual((-10).shortTimeLapse(), "just now")
         XCTAssertEqual(0.shortTimeLapse(), "just now")
         XCTAssertEqual(2.shortTimeLapse(), "just now")
         XCTAssertEqual(9.shortTimeLapse(), "just now")
@@ -69,7 +70,7 @@ final class TimeLapseTests: XCTestCase {
             var now    : String = "now"
             var second : String = "sec"
             var minute : String = "min"
-            var hour   : String = "hour"
+            var hour   : String = "hr"
             var day    : String = "d"
             var week   : String = "w"
             var month  : String = "mon"
@@ -81,13 +82,13 @@ final class TimeLapseTests: XCTestCase {
         XCTAssertEqual(0.shortTimeLapse(), "now")
         XCTAssertEqual(10.shortTimeLapse(), "10sec")
         XCTAssertEqual(1800.shortTimeLapse(), "30min")
-        XCTAssertEqual(7200.shortTimeLapse(), "2hour")
+        XCTAssertEqual(7200.shortTimeLapse(), "2hr")
         XCTAssertEqual(604_799.shortTimeLapse(), "6d")
         XCTAssertEqual(2_591_999.shortTimeLapse(), "4w")
         XCTAssertEqual(31_535_999.shortTimeLapse(), "12mon")
         XCTAssertEqual(630_720_000.shortTimeLapse(), "20y")
         
-        TimeLapse.enableDefaultFormat()
+        TimeLapse.setDefaultFormat()
     }
     
     static var allTests = [

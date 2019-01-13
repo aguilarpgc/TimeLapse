@@ -29,14 +29,15 @@ Conforts to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
 ``` Swift
 struct CustomTimeLapseFormat: TimeLapseFormat {
 
-var now    : String = "now"
-var second : String = "sec"
-var minute : String = "min"
-var hour   : String = "hour"
-var day    : String = "d"
-var week   : String = "w"
-var month  : String = "mon"
-var year   : String = "y"
+    var now    : String = "now"
+    var second : String = "sec"
+    var minute : String = "min"
+    var hour   : String = "hour"
+    var day    : String = "d"
+    var week   : String = "w"
+    var month  : String = "mon"
+    var year   : String = "y"
+
 }
 ```
 ##### Then:
