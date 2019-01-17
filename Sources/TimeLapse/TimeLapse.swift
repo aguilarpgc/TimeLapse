@@ -5,6 +5,8 @@
 //  Created by Paul Aguilar on 9/25/18.
 //
 
+import Foundation
+
 public struct TimeLapse {
     
     public static var format: TimeLapseFormat = TimeLapseDefaultFormat()
@@ -12,6 +14,14 @@ public struct TimeLapse {
     public static func setDefaultFormat() {
         
         TimeLapse.format = TimeLapseDefaultFormat()
+    }
+}
+
+public extension Date {
+    
+    public func elapsedTime(from date: Date = Date()) -> String {
+        
+        return Int(date.timeIntervalSince(self)).shortTimeLapse()
     }
 }
 

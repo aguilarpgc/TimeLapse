@@ -22,7 +22,7 @@ public struct TimeLapseDefaultFormat: TimeLapseFormat {
     
     public let now    = "just now"
     public let second = "s"
-    public let minute = "m"
+    public let minute = "min"
     public let hour   = "h"
     public let day    = "d"
     public let week   = "w"
