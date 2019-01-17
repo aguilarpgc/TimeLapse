@@ -1,7 +1,8 @@
 # TimeLapse
 
-[![Swift](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://swift.org/)
 [![License](https://img.shields.io/badge/license-MIT-71787A.svg)](https://tldrlegal.com/license/mit-license)
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20tvos%20%7C%20watchos-lightgrey.svg)](https://developer.apple.com/swift/)
 
 Simple `Int` extension with time lapse description
 
@@ -72,5 +73,3 @@ TimeLapse.format = CustomTimeLapseFormat()
 ``` Swift
 TimeLapse.enableDefaultFormat()
 ```
-
-
