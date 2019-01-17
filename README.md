@@ -7,6 +7,16 @@ Simple `Int` extension with time lapse description
 
 Converts `Int` (seconds) to a formatted short length `String`
 
+## Installation
+
+### Swift Package Manager
+
+```
+dependencies: [
+    .package(url: "https://github.com/aguilarpgc/TimeLapse.git", from: "0.3.0")
+]
+```
+
 ## Usage
 
 ### Default
