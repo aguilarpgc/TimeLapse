@@ -23,7 +23,9 @@ dependencies: [
 #### Date
 
 ``` Swift
-let dateFormatter = DateFormatter(); dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
+
 let fakeCurrentDate = dateFormatter.date(from: "24/12/2018 23:59:59")!
 
 let date0  = dateFormatter.date(from: "24/12/2018 23:59:58")!
@@ -45,7 +47,7 @@ let date7  = dateFormatter.date(from: "24/12/2016 23:59:59")!
 * Months  :  `date6.elapsedTime(from: fakeCurrentDate)` **1mo**
 * Years  :  `date7.elapsedTime(from: fakeCurrentDate)` **2y**
 
-#### Seconds
+#### Int (Seconds)
 
 * Now :  `2.shortTimeLapse()`  **just now**
 * Seconds :  `10.shortTimeLapse()`   **10s**
