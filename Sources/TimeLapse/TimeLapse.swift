@@ -19,7 +19,7 @@ public struct TimeLapse {
 
 public extension Date {
     
-    public func elapsedTime(from date: Date = Date()) -> String {
+    public func elapsedTime(until date: Date = Date()) -> String {
         
         return Int(date.timeIntervalSince(self)).shortTimeLapse()
     }
