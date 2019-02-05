@@ -12,13 +12,25 @@
 
 ```
 dependencies: [
-    .package(url: "https://github.com/aguilarpgc/TimeLapse.git", from: "0.4.0")
+    .package(url: "https://github.com/aguilarpgc/TimeLapse.git", from: "0.5.0")
 ]
 ```
 
 ## Usage
 
 ### Default
+
+``` Swift
+import Foundation
+import TimeLapse
+
+let currentDate = Date()
+let pastDate = Calendar.current.date(byAdding: .second, value: -700, to: currentDate)!
+
+let timeLapse = pastDate.elapsedTime(until: currentDate)
+
+print(timeLapse)
+```
 
 #### Date
 
@@ -36,16 +48,25 @@ let date4  = dateFormatter.date(from: "23/12/2018 23:59:59")!
 let date5  = dateFormatter.date(from: "09/12/2018 23:59:59")!
 let date6  = dateFormatter.date(from: "24/11/2018 23:59:59")!
 let date7  = dateFormatter.date(from: "24/12/2016 23:59:59")!
+
+date0.elapsedTime(until: fakeCurrentDate) // Now
+date1.elapsedTime(until: fakeCurrentDate) // Seconds
+date2.elapsedTime(until: fakeCurrentDate) // Minutes
+date3.elapsedTime(until: fakeCurrentDate) // Hours
+date4.elapsedTime(until: fakeCurrentDate) // Days
+date5.elapsedTime(until: fakeCurrentDate) // Weeks
+date6.elapsedTime(until: fakeCurrentDate) // Months
+date7.elapsedTime(until: fakeCurrentDate) // Years
 ```
 
-* Now :   `date0.elapsedTime(from: fakeCurrentDate)` **just now**
-* Seconds :   `date1.elapsedTime(from: fakeCurrentDate)` **50s**
-* Minutes :   `date2.elapsedTime(from: fakeCurrentDate)` **7min**
-* Hours  :  `date3.elapsedTime(from: fakeCurrentDate)` **5h**
-* Days  :  `date4.elapsedTime(from: fakeCurrentDate)` **1d**
-* Weeks  :  `date5.elapsedTime(from: fakeCurrentDate)` **2w**
-* Months  :  `date6.elapsedTime(from: fakeCurrentDate)` **1mo**
-* Years  :  `date7.elapsedTime(from: fakeCurrentDate)` **2y**
+* Now     : **just now**
+* Seconds : **50s**
+* Minutes : **7min**
+* Hours   : **5h**
+* Days    : **1d**
+* Weeks   : **2w**
+* Months  : **1mo**
+* Years   : **2y**
 
 #### Int (Seconds)
 
