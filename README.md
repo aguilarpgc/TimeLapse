@@ -71,14 +71,14 @@ date7.elapsedTime(until: fakeCurrentDate) // Years
 #### Int (Seconds)
 
 ```
-`2.shortTimeLapse() // Now
-`10.shortTimeLapse() // Seconds
-`1800.shortTimeLapse() // Minutes
-`43200.shortTimeLapse() // Hours
-`172_800.shortTimeLapse() // Days
-`604_800.shortTimeLapse() // Weeks
-`15_552_000.shortTimeLapse() // Months
-`31_536_000.shortTimeLapse() // Years
+2.shortTimeLapse() // Now
+10.shortTimeLapse() // Seconds
+1800.shortTimeLapse() // Minutes
+43200.shortTimeLapse() // Hours
+172_800.shortTimeLapse() // Days
+604_800.shortTimeLapse() // Weeks
+15_552_000.shortTimeLapse() // Months
+31_536_000.shortTimeLapse() // Years
 ```
 * Now     : **just now**
 * Seconds : **10s**
@@ -115,16 +115,27 @@ struct CustomTimeLapseFormat: TimeLapseFormat {
 TimeLapse.format = CustomTimeLapseFormat()
 ```
 
-##### Result: 
+##### Result:
 
-* Now: `0.shortTimeLapse()` **now**
-* Seconds: `10.shortTimeLapse()` **10sec**
-* Minutes: `1800.shortTimeLapse()` **30m**
-* Hours: `7200.shortTimeLapse()` **2hour**
-* Days: `604_799.shortTimeLapse()` **6d**
-* Weeks: `2_591_999.shortTimeLapse()` **4w**
-* Months: `31_535_999.shortTimeLapse()` **12mon**
-* Years: `630_720_000.shortTimeLapse()` **20y**
+```
+0.shortTimeLapse()` // Now
+10.shortTimeLapse()` // Seconds
+1800.shortTimeLapse()` // Minutes
+7200.shortTimeLapse()` // Hours
+604_799.shortTimeLapse()` // Days
+2_591_999.shortTimeLapse()` // Weeks
+31_535_999.shortTimeLapse()` // Months
+630_720_000.shortTimeLapse()` // Years
+```
+
+* Now     : **now**
+* Seconds : **10sec**
+* Minutes : **30m**
+* Hours   : **2hour**
+* Days    : **6d**
+* Weeks   : **4w**
+* Months  : **12mon**
+* Years   : **20y***
 
 ##### Change back to default format
 
