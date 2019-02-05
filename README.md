@@ -70,7 +70,7 @@ date7.elapsedTime(until: fakeCurrentDate) // Years
 
 #### Int (Seconds)
 
-```
+``` Swift
 2.shortTimeLapse() // Now
 10.shortTimeLapse() // Seconds
 1800.shortTimeLapse() // Minutes
@@ -117,7 +117,7 @@ TimeLapse.format = CustomTimeLapseFormat()
 
 ##### Result:
 
-```
+``` Swift
 0.shortTimeLapse()` // Now
 10.shortTimeLapse()` // Seconds
 1800.shortTimeLapse()` // Minutes
