@@ -29,7 +29,7 @@ let pastDate = Calendar.current.date(byAdding: .second, value: -700, to: current
 
 let timeLapse = pastDate.elapsedTime(until: currentDate)
 
-print(timeLapse)
+print(timeLapse) // 11min
 ```
 
 #### Date
@@ -70,14 +70,24 @@ date7.elapsedTime(until: fakeCurrentDate) // Years
 
 #### Int (Seconds)
 
-* Now :  `2.shortTimeLapse()`  **just now**
-* Seconds :  `10.shortTimeLapse()`   **10s**
-* Minutes :  `1800.shortTimeLapse()`   **30min**
-* Hours  :  `43200.shortTimeLapse()`   **12h**
-* Days  :  `172_800.shortTimeLapse()`    **2d**
-* Weeks  :  `604_800.shortTimeLapse()`   **1w**
-* Months  :  `15_552_000.shortTimeLapse()`   **6mo**
-* Years  :  `31_536_000.shortTimeLapse()`   **1y**
+```
+`2.shortTimeLapse() // Now
+`10.shortTimeLapse() // Seconds
+`1800.shortTimeLapse() // Minutes
+`43200.shortTimeLapse() // Hours
+`172_800.shortTimeLapse() // Days
+`604_800.shortTimeLapse() // Weeks
+`15_552_000.shortTimeLapse() // Months
+`31_536_000.shortTimeLapse() // Years
+```
+* Now     : **just now**
+* Seconds : **10s**
+* Minutes : **30min**
+* Hours   : **12h**
+* Days    : ***2d**
+* Weeks   : **1w**
+* Months  : **6mo**
+* Years   : **1y**
 
 ### Custom
 
