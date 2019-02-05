@@ -84,7 +84,7 @@ date7.elapsedTime(until: fakeCurrentDate) // Years
 * Seconds : **10s**
 * Minutes : **30min**
 * Hours   : **12h**
-* Days    : ***2d**
+* Days    : **2d**
 * Weeks   : **1w**
 * Months  : **6mo**
 * Years   : **1y**
@@ -118,14 +118,14 @@ TimeLapse.format = CustomTimeLapseFormat()
 ##### Result:
 
 ``` Swift
-0.shortTimeLapse()` // Now
-10.shortTimeLapse()` // Seconds
-1800.shortTimeLapse()` // Minutes
-7200.shortTimeLapse()` // Hours
-604_799.shortTimeLapse()` // Days
-2_591_999.shortTimeLapse()` // Weeks
-31_535_999.shortTimeLapse()` // Months
-630_720_000.shortTimeLapse()` // Years
+0.shortTimeLapse() // Now
+10.shortTimeLapse() // Seconds
+1800.shortTimeLapse() // Minutes
+7200.shortTimeLapse() // Hours
+604_799.shortTimeLapse() // Days
+2_591_999.shortTimeLapse() // Weeks
+31_535_999.shortTimeLapse() // Months
+630_720_000.shortTimeLapse() // Years
 ```
 
 * Now     : **now**
@@ -135,7 +135,7 @@ TimeLapse.format = CustomTimeLapseFormat()
 * Days    : **6d**
 * Weeks   : **4w**
 * Months  : **12mon**
-* Years   : **20y***
+* Years   : **20y**
 
 ##### Change back to default format
 
