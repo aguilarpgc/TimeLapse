@@ -1,10 +1,11 @@
 # TimeLapse
 
+[![Version](https://img.shields.io/github/tag/aguilarpgc/TimeLapse.svg?label=version&style=flat)](https://github.com/aguilarpgc/TimeLapse/releases)
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20tvos%20%7C%20watchos-lightgrey.svg)](https://developer.apple.com/swift/)
 [![Swift](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://swift.org/)
 [![License](https://img.shields.io/badge/license-MIT-71787A.svg)](https://tldrlegal.com/license/mit-license)
-[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20tvos%20%7C%20watchos-lightgrey.svg)](https://developer.apple.com/swift/)
 
-`Date` extension that compares `Date` with current time, converts it in seconds and returns a formatted time lapse description `String`.
+`Date` extension that compares another `Date` with current time, converts it in seconds and returns a formatted time lapse description.
 
 ## Installation
 
@@ -40,6 +41,7 @@ dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
 
 let fakeCurrentDate = dateFormatter.date(from: "24/12/2018 23:59:59")!
 
+// some dates
 let date0  = dateFormatter.date(from: "24/12/2018 23:59:58")!
 let date1  = dateFormatter.date(from: "24/12/2018 23:59:09")!
 let date2  = dateFormatter.date(from: "24/12/2018 23:52:59")!
