@@ -51,45 +51,45 @@ let date5  = dateFormatter.date(from: "09/12/2018 23:59:59")!
 let date6  = dateFormatter.date(from: "24/11/2018 23:59:59")!
 let date7  = dateFormatter.date(from: "24/12/2016 23:59:59")!
 
-date0.elapsedTime(until: fakeCurrentDate) // Now
-date1.elapsedTime(until: fakeCurrentDate) // Seconds
-date2.elapsedTime(until: fakeCurrentDate) // Minutes
-date3.elapsedTime(until: fakeCurrentDate) // Hours
-date4.elapsedTime(until: fakeCurrentDate) // Days
-date5.elapsedTime(until: fakeCurrentDate) // Weeks
-date6.elapsedTime(until: fakeCurrentDate) // Months
-date7.elapsedTime(until: fakeCurrentDate) // Years
+date0.elapsedTime(until: fakeCurrentDate)
+date1.elapsedTime(until: fakeCurrentDate)
+date2.elapsedTime(until: fakeCurrentDate)
+date3.elapsedTime(until: fakeCurrentDate)
+date4.elapsedTime(until: fakeCurrentDate)
+date5.elapsedTime(until: fakeCurrentDate)
+date6.elapsedTime(until: fakeCurrentDate)
+date7.elapsedTime(until: fakeCurrentDate)
 ```
 
-* Now     : **just now**
-* Seconds : **50s**
-* Minutes : **7min**
-* Hours   : **5h**
-* Days    : **1d**
-* Weeks   : **2w**
-* Months  : **1mo**
-* Years   : **2y**
+* Just Now : **just now**
+* Seconds  : **50s**
+* Minutes  : **7min**
+* Hours    : **5h**
+* Days     : **1d**
+* Weeks    : **2w**
+* Months   : **1mo**
+* Years    : **2y**
 
 #### Int (Seconds)
 
 ``` Swift
-2.shortTimeLapse() // Now
-10.shortTimeLapse() // Seconds
-1800.shortTimeLapse() // Minutes
-43200.shortTimeLapse() // Hours
-172_800.shortTimeLapse() // Days
-604_800.shortTimeLapse() // Weeks
-15_552_000.shortTimeLapse() // Months
-31_536_000.shortTimeLapse() // Years
+2.shortTimeLapse()
+10.shortTimeLapse()
+1800.shortTimeLapse()
+43200.shortTimeLapse()
+172_800.shortTimeLapse()
+604_800.shortTimeLapse()
+15_552_000.shortTimeLapse()
+31_536_000.shortTimeLapse()
 ```
-* Now     : **just now**
-* Seconds : **10s**
-* Minutes : **30min**
-* Hours   : **12h**
-* Days    : **2d**
-* Weeks   : **1w**
-* Months  : **6mo**
-* Years   : **1y**
+* Just Now : **just now**
+* Seconds  : **10s**
+* Minutes  : **30min**
+* Hours    : **12h**
+* Days     : **2d**
+* Weeks    : **1w**
+* Months   : **6mo**
+* Years    : **1y**
 
 ### Custom
 
@@ -120,24 +120,24 @@ TimeLapse.format = CustomTimeLapseFormat()
 ##### Result:
 
 ``` Swift
-0.shortTimeLapse() // Now
-10.shortTimeLapse() // Seconds
-1800.shortTimeLapse() // Minutes
-7200.shortTimeLapse() // Hours
-604_799.shortTimeLapse() // Days
-2_591_999.shortTimeLapse() // Weeks
-31_535_999.shortTimeLapse() // Months
-630_720_000.shortTimeLapse() // Years
+0.shortTimeLapse()
+10.shortTimeLapse()
+1800.shortTimeLapse()
+7200.shortTimeLapse()
+604_799.shortTimeLapse()
+2_591_999.shortTimeLapse()
+31_535_999.shortTimeLapse()
+630_720_000.shortTimeLapse()
 ```
 
-* Now     : **now**
-* Seconds : **10sec**
-* Minutes : **30m**
-* Hours   : **2hour**
-* Days    : **6d**
-* Weeks   : **4w**
-* Months  : **12mon**
-* Years   : **20y**
+* Just Now : **now**
+* Seconds  : **10sec**
+* Minutes  : **30m**
+* Hours    : **2hour**
+* Days     : **6d**
+* Weeks    : **4w**
+* Months   : **12mon**
+* Years    : **20y**
 
 ##### Change back to default format
 

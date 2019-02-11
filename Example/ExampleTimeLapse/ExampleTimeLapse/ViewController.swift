@@ -33,9 +33,6 @@ class ViewController: UIViewController {
         
         tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
     }
-    
-    // MARK: - Methods -
-    
 }
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
