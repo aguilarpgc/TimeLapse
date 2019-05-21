@@ -93,7 +93,7 @@ date7.elapsedTime(until: fakeCurrentDate)
 
 ### Custom
 
-Conforts to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
+Conforms to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
 
 #### Example
 
