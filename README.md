@@ -1,7 +1,7 @@
 # TimeLapse
 
 [![Version](https://img.shields.io/github/tag/aguilarpgc/TimeLapse.svg?colorB=blue&label=release&style=flat)](https://github.com/aguilarpgc/TimeLapse/releases)
-[![Swift](https://img.shields.io/badge/swift-4.2-orange.svg?style=flat)](https://swift.org/)
+[![Swift](https://img.shields.io/badge/swift-5.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 [![Platform](https://img.shields.io/badge/platform-ios%20%7C%20macos%20%7C%20tvos%20%7C%20watchos-lightgrey.svg)](https://developer.apple.com/swift/)
 [![License](https://img.shields.io/badge/license-MIT-71787A.svg)](https://tldrlegal.com/license/mit-license)
 
