@@ -55,7 +55,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell?.selectionStyle = .none
         
-        cell?.textLabel?.text = item.desc
+        cell?.textLabel?.text       = item.desc
         cell?.detailTextLabel?.text = item.date.elapsedTime()
         
         return cell!
