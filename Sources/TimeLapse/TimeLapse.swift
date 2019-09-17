@@ -7,6 +7,8 @@
 
 import Foundation
 
+fileprivate let maxToBeSeconds: Int = 10
+
 public struct TimeLapse {
     
     public static var format: TimeLapseFormat = TimeLapseDefaultFormat()
@@ -32,48 +34,47 @@ public extension Int {
         let seconds: Int = self
         let format = TimeLapse.format
         
-        if seconds < Int.secondsOnADay {
+        switch seconds {
             
-            if seconds < 10 {
-                
-                return format.now
-                
-            } else if seconds < Int.secondsOnAMinute {
-                
-                return "\(seconds)\(format.second)"
-                
-            } else if seconds < Int.secondsOnAnHour {
-                
-                let min: Int = seconds / Int.secondsOnAMinute
-                
-                return "\(min)\(format.minute)"
-                
-            } else {
-                
-                let hours: Int = seconds / Int.secondsOnAnHour
-                
-                return "\(hours)\(format.hour)"
-            }
+        case ..<maxToBeSeconds:
             
-        } else if seconds < Int.secondsOnAWeek {
+            return format.now
+            
+        case maxToBeSeconds..<Int.secondsOnAMinute:
+            
+            return "\(seconds)\(format.second)"
+            
+        case Int.secondsOnAMinute..<Int.secondsOnAnHour:
+            
+            let min: Int = seconds / Int.secondsOnAMinute
+            
+            return "\(min)\(format.minute)"
+            
+        case Int.secondsOnAnHour..<Int.secondsOnADay:
+            
+            let hours: Int = seconds / Int.secondsOnAnHour
+            
+            return "\(hours)\(format.hour)"
+            
+        case Int.secondsOnADay..<Int.secondsOnAWeek:
             
             let days = seconds / (Int.secondsOnADay)
             
             return "\(days)\(format.day)"
             
-        } else if seconds < Int.secondsOnAMonth {
+        case Int.secondsOnAWeek..<Int.secondsOnAMonth:
             
             let weeks = seconds / (Int.secondsOnAWeek)
             
             return "\(weeks)\(format.week)"
             
-        } else if seconds < Int.secondsOnAYear {
+        case Int.secondsOnAMonth..<Int.secondsOnAYear:
             
             let months = seconds / (Int.secondsOnAMonth)
             
             return "\(months)\(format.month)"
             
-        } else {
+        default:
             
             let years = seconds / (Int.secondsOnAYear)
             
