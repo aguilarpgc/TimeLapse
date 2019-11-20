@@ -85,11 +85,11 @@ public extension Int {
 
 private extension Int {
     
-    static let secondsOnAMinute =         60  // 60
-    static let secondsOnAnHour  =      3_600  // 60 * 60
-    static let secondsOnADay    =     86_400  // 60 * 60 * 24
-    static let secondsOnAWeek   =    604_800  // 60 * 60 * 24 * 7
-    static let secondsOnAMonth  =  2_592_000  // 60 * 60 * 24 * 30
-    static let secondsOnAYear   = 31_536_000  // 60 * 60 * 24 * 365
+    static let secondsOnAMinute = 60         // 60
+    static let secondsOnAnHour  = 3_600      // 60 * 60
+    static let secondsOnADay    = 86_400     // 60 * 60 * 24
+    static let secondsOnAWeek   = 604_800    // 60 * 60 * 24 * 7
+    static let secondsOnAMonth  = 2_592_000  // 60 * 60 * 24 * 30
+    static let secondsOnAYear   = 31_536_000 // 60 * 60 * 24 * 365
     
 }

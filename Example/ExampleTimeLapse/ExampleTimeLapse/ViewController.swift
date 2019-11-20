@@ -14,9 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    // MARK: - Properties -
-    
-    // MARK: - Life cycle -
+    // MARK: - Lifecycle -
     
     override func viewDidLoad() {
         
@@ -34,6 +32,9 @@ class ViewController: UIViewController {
         tableView.reloadSections(IndexSet(integer: 0), with: .automatic)
     }
 }
+
+// MARK: - Protocols
+// MARK: - Protocol UITableViewDataSource, UITableViewDelegate -
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
