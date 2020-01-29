@@ -25,12 +25,12 @@ dependencies: [
 import Foundation
 import TimeLapse
 
-let currentDate = Date()
-let pastDate = Calendar.current.date(byAdding: .second, value: -700, to: currentDate)!
+let currentDate  = Date()
+let fakePastDate = Calendar.current.date(byAdding: .second, value: -600, to: currentDate)! // 10 minutes ago
 
-let timeLapse = pastDate.elapsedTime(until: currentDate)
+let timeLapse = fakePastDate.elapsedTime(until: currentDate)
 
-print(timeLapse) // 11min
+print(timeLapse) // 10min
 ```
 
 #### Date
@@ -41,7 +41,7 @@ dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
 
 let fakeCurrentDate = dateFormatter.date(from: "24/12/2018 23:59:59")!
 
-// some dates
+// some test dates
 let date0  = dateFormatter.date(from: "24/12/2018 23:59:58")!
 let date1  = dateFormatter.date(from: "24/12/2018 23:59:09")!
 let date2  = dateFormatter.date(from: "24/12/2018 23:52:59")!
@@ -91,9 +91,9 @@ date7.elapsedTime(until: fakeCurrentDate)
 * Months   : **6mo**
 * Years    : **1y**
 
-### Custom
+### Customize Format
 
-Conforms to the protocol `TimeLapseFormat` and assign it to `TimeLapse.format`
+Conforms to the protocol `TimeLapseFormat` and assign custom format to `TimeLapse.format`
 
 #### Example
 
@@ -111,7 +111,7 @@ struct CustomTimeLapseFormat: TimeLapseFormat {
 
 }
 ```
-##### Then:
+##### Assign for usage:
 
 ``` Swift
 TimeLapse.format = CustomTimeLapseFormat()
@@ -139,7 +139,7 @@ TimeLapse.format = CustomTimeLapseFormat()
 * Months   : **12mon**
 * Years    : **20y**
 
-##### Change back to default format
+##### Restore to default format
 
 ``` Swift
 TimeLapse.enableDefaultFormat()
