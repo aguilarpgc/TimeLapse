@@ -144,6 +144,10 @@ TimeLapse.format = CustomTimeLapseFormat()
 ``` Swift
 TimeLapse.enableDefaultFormat()
 ```
+# Example
+
+![Alt Text](https://github.com/aguilarpgc/TimeLapse/blob/master/Resources/example.gif?raw=true)
+
 
 # License
 
