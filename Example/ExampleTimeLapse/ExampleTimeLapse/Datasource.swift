@@ -49,7 +49,8 @@ extension Item {
         
         for _ in 0..<30 {
             
-            let daysOff    = Bool.random() ? -Int.random(in: 0..<500)   : 0
+            // Randomized
+            let daysOff    = Bool.random() ? -Int.random(in: 0..<800) : 0
             let secondsOff = Bool.random() ? -Int.random(in: 0..<3_600) : -Int.random(in: 0..<86_400)
             
             var components = DateComponents()
@@ -59,9 +60,7 @@ extension Item {
             
             let date = Calendar.current.date(byAdding: components, to: currentDate)!
             
-            let item = Item(date: date)
-            
-            temp.append(item)
+            temp.append(Item(date: date))
         }
         
         return temp.sorted(by: { $0.date > $1.date })
