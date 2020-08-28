@@ -146,7 +146,7 @@ TimeLapse.enableDefaultFormat()
 ```
 ## Example
 
-![Alt Text](https://github.com/aguilarpgc/TimeLapse/blob/master/Resources/example.gif?raw=true)
+![Alt Text](https://github.com/aguilarpgc/TimeLapse/blob/master/Resources/demo.gif?raw=true)
 
 
 # License
