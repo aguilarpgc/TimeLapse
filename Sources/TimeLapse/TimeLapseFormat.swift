@@ -6,7 +6,6 @@
 //
 
 public protocol TimeLapseFormat {
-    
     var now    : String { get }
     var second : String { get }
     var minute : String { get }
@@ -15,11 +14,9 @@ public protocol TimeLapseFormat {
     var week   : String { get }
     var month  : String { get }
     var year   : String { get }
-    
 }
 
 public struct TimeLapseDefaultFormat: TimeLapseFormat {
-
     public let now    = "just now"
     public let second = "s"
     public let minute = "min"
