@@ -17,6 +17,10 @@ dependencies: [
 ]
 ```
 
+## Example
+
+![Alt Text](https://github.com/aguilarpgc/TimeLapse/blob/master/Resources/demo.gif?raw=true)
+
 ## Usage
 
 ### Default
@@ -144,10 +148,6 @@ TimeLapse.format = CustomTimeLapseFormat()
 ``` Swift
 TimeLapse.enableDefaultFormat()
 ```
-## Example
-
-![Alt Text](https://github.com/aguilarpgc/TimeLapse/blob/master/Resources/demo.gif?raw=true)
-
 
 # License
 
