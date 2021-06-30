@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    // MARK: - Properties -
+    private let cellIdentifier = "cell"
+    
     // MARK: - Lifecycle -
     
     override func viewDidLoad() {
@@ -44,12 +47,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
+
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
         
         if cell == nil {
             
-            cell = UITableViewCell(style: .value1, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .value1, reuseIdentifier: cellIdentifier)
         }
         
         let item = Datasource.shared.items[indexPath.row]

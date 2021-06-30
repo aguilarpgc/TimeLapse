@@ -37,7 +37,7 @@ final class TimeLapseTests: XCTestCase {
         XCTAssertEqual((-10).shortTimeLapse(), "just now") // Invalid -> "just now"
         XCTAssertEqual(0.shortTimeLapse(), "just now")
         XCTAssertEqual(2.shortTimeLapse(), "just now")
-        XCTAssertEqual(9.shortTimeLapse(), "just now")
+        XCTAssertEqual(4.shortTimeLapse(), "just now")
     }
     
     // Seconds
